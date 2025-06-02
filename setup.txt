@@ -1,0 +1,5 @@
+conda create -n cancer_detection python=3.8 -y
+
+conda activate cancer_detection
+
+pip install -r requirements.txt
