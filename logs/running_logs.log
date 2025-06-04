@@ -1,1 +1,20 @@
-[2025-06-02 14:32:15,888: INFO: main: Welcome to cnnClassifier]
+[2025-06-04 16:59:55,106: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-06-04 16:59:55,108: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-04 16:59:55,108: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-04 16:59:55,109: INFO: common: created directory at: artifacts]
+[2025-06-04 16:59:55,109: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-04 16:59:55,110: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-06-04 17:00:00,987: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-06-04 17:00:01,604: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-06-04 17:36:42,628: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-06-04 17:36:42,632: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-04 17:36:42,633: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-04 17:36:42,633: INFO: common: created directory at: artifacts]
+[2025-06-04 17:36:42,634: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-04 17:36:42,635: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-06-04 17:36:49,275: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-06-04 17:36:50,085: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
