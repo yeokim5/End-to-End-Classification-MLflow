@@ -12,7 +12,7 @@ class PrepareBaseModel:
     
     def get_base_model(self):
         self.model = tf.keras.applications.vgg16.VGG16(
-            input_shape=self.config.params_image_size,
+            input_shape=tuple(self.config.params_image_size),
             weights=self.config.params_weights,
             include_top=self.config.params_include_top
         )
@@ -30,7 +30,7 @@ class PrepareBaseModel:
             for layer in model.layers[:-freeze_till]:
                 model.trainable = False
 
-        flatten_in = tf.keras.layers.Flatten()(model.output)
+        flatten_in = tf.keras.layers.Flatten(name='custom_flatten')(model.output)
         prediction = tf.keras.layers.Dense(
             units=classes,
             activation="softmax"
