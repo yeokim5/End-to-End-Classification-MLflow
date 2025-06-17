@@ -306,3 +306,268 @@ Traceback (most recent call last):
   File "C:\Users\Soft11\Miniconda3\envs\cancer_detection\lib\site-packages\keras\engine\functional.py", line 1157, in _map_graph_network
     raise ValueError(
 ValueError: The name "flatten" is used 2 times in the model. All layer names should be unique.
+[2025-06-16 17:17:35,822: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-06-16 17:17:35,825: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-16 17:17:35,828: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-16 17:17:35,830: INFO: common: created directory at: artifacts]
+[2025-06-16 17:17:36,828: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/yeokim5/End-to-End-Classification-MLflow "HTTP/1.1 200 OK"]
+[2025-06-16 17:17:36,831: INFO: helpers: Initialized MLflow to track repo "yeokim5/End-to-End-Classification-MLflow"]
+[2025-06-16 17:17:36,832: INFO: helpers: Repository yeokim5/End-to-End-Classification-MLflow initialized!]
+[2025-06-16 17:17:36,832: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-16 17:17:36,832: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-06-16 17:17:44,627: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-06-16 17:17:45,415: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-06-16 17:17:45,415: INFO: main: *******************]
+[2025-06-16 17:17:45,415: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-06-16 17:17:45,418: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-16 17:17:45,419: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-16 17:17:45,420: INFO: common: created directory at: artifacts]
+[2025-06-16 17:17:46,123: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/yeokim5/End-to-End-Classification-MLflow "HTTP/1.1 200 OK"]
+[2025-06-16 17:17:46,126: INFO: helpers: Initialized MLflow to track repo "yeokim5/End-to-End-Classification-MLflow"]
+[2025-06-16 17:17:46,127: INFO: helpers: Repository yeokim5/End-to-End-Classification-MLflow initialized!]
+[2025-06-16 17:17:46,129: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-06-16 17:17:46,632: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-06-16 17:17:47,058: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-06-16 17:17:47,060: INFO: main: *******************]
+[2025-06-16 17:17:47,060: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-06-16 17:17:47,063: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-16 17:17:47,068: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-16 17:17:47,069: INFO: common: created directory at: artifacts]
+[2025-06-16 17:17:47,723: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/yeokim5/End-to-End-Classification-MLflow "HTTP/1.1 200 OK"]
+[2025-06-16 17:17:47,729: INFO: helpers: Initialized MLflow to track repo "yeokim5/End-to-End-Classification-MLflow"]
+[2025-06-16 17:17:47,731: INFO: helpers: Repository yeokim5/End-to-End-Classification-MLflow initialized!]
+[2025-06-16 17:17:47,732: INFO: common: created directory at: artifacts\training]
+[2025-06-16 17:18:43,799: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-06-16 17:18:43,799: INFO: main: *******************]
+[2025-06-16 17:18:43,800: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-06-16 17:18:43,802: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-16 17:18:43,804: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-16 17:18:43,805: INFO: common: created directory at: artifacts]
+[2025-06-16 17:18:44,560: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/yeokim5/End-to-End-Classification-MLflow "HTTP/1.1 200 OK"]
+[2025-06-16 17:18:44,566: INFO: helpers: Initialized MLflow to track repo "yeokim5/End-to-End-Classification-MLflow"]
+[2025-06-16 17:18:44,567: INFO: helpers: Repository yeokim5/End-to-End-Classification-MLflow initialized!]
+[2025-06-16 17:19:01,814: INFO: common: json file saved at: scores.json]
+[2025-06-16 17:19:01,817: INFO: common: json file saved at: scores.json]
+[2025-06-16 17:19:05,842: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2025-06-16 17:19:06,941: INFO: builder_impl: Assets written to: C:\Users\Soft11\AppData\Local\Temp\tmpnr5zipr4\model\data\model\assets]
+[2025-06-16 17:19:43,664: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-06-16 17:20:27,629: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-06-16 17:20:27,632: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-16 17:20:27,633: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-16 17:20:27,634: INFO: common: created directory at: artifacts]
+[2025-06-16 17:20:28,444: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/yeokim5/End-to-End-Classification-MLflow "HTTP/1.1 200 OK"]
+[2025-06-16 17:20:28,448: INFO: helpers: Initialized MLflow to track repo "yeokim5/End-to-End-Classification-MLflow"]
+[2025-06-16 17:20:28,451: INFO: helpers: Repository yeokim5/End-to-End-Classification-MLflow initialized!]
+[2025-06-16 17:20:28,452: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-16 17:20:28,453: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-06-16 17:20:34,043: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-06-16 17:20:35,054: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-06-16 17:20:35,054: INFO: main: *******************]
+[2025-06-16 17:20:35,055: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-06-16 17:20:35,060: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-16 17:20:35,062: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-16 17:20:35,065: INFO: common: created directory at: artifacts]
+[2025-06-16 17:20:36,158: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/yeokim5/End-to-End-Classification-MLflow "HTTP/1.1 200 OK"]
+[2025-06-16 17:20:36,164: INFO: helpers: Initialized MLflow to track repo "yeokim5/End-to-End-Classification-MLflow"]
+[2025-06-16 17:20:36,166: INFO: helpers: Repository yeokim5/End-to-End-Classification-MLflow initialized!]
+[2025-06-16 17:20:36,167: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-06-16 17:20:36,991: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-06-16 17:20:37,512: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-06-16 17:20:37,513: INFO: main: *******************]
+[2025-06-16 17:20:37,513: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-06-16 17:20:37,519: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-16 17:20:37,524: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-16 17:20:37,526: INFO: common: created directory at: artifacts]
+[2025-06-16 17:20:38,466: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/yeokim5/End-to-End-Classification-MLflow "HTTP/1.1 200 OK"]
+[2025-06-16 17:20:38,482: INFO: helpers: Initialized MLflow to track repo "yeokim5/End-to-End-Classification-MLflow"]
+[2025-06-16 17:20:38,486: INFO: helpers: Repository yeokim5/End-to-End-Classification-MLflow initialized!]
+[2025-06-16 17:20:38,492: INFO: common: created directory at: artifacts\training]
+[2025-06-16 17:27:12,290: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-06-16 17:27:12,304: INFO: main: *******************]
+[2025-06-16 17:27:12,305: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-06-16 17:27:12,328: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-16 17:27:12,341: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-16 17:27:12,347: INFO: common: created directory at: artifacts]
+[2025-06-16 17:27:14,231: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/yeokim5/End-to-End-Classification-MLflow "HTTP/1.1 200 OK"]
+[2025-06-16 17:27:14,300: INFO: helpers: Initialized MLflow to track repo "yeokim5/End-to-End-Classification-MLflow"]
+[2025-06-16 17:27:14,303: INFO: helpers: Repository yeokim5/End-to-End-Classification-MLflow initialized!]
+[2025-06-16 17:27:37,364: INFO: common: json file saved at: scores.json]
+[2025-06-16 17:27:37,367: INFO: common: json file saved at: scores.json]
+[2025-06-16 17:27:41,889: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2025-06-16 17:27:42,915: INFO: builder_impl: Assets written to: C:\Users\Soft11\AppData\Local\Temp\tmpfztmskpt\model\data\model\assets]
+[2025-06-16 17:28:27,392: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-06-16 17:52:16,293: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-06-16 17:52:16,297: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-16 17:52:16,298: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-16 17:52:16,299: INFO: common: created directory at: artifacts]
+[2025-06-16 17:52:16,965: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-06-16 17:52:16,970: INFO: helpers: Accessing as yeokim5]
+[2025-06-16 17:52:17,764: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/yeokim5/End-to-End-Classification-MLflow "HTTP/1.1 200 OK"]
+[2025-06-16 17:52:18,530: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-06-16 17:52:18,533: INFO: helpers: Initialized MLflow to track repo "yeokim5/End-to-End-Classification-MLflow"]
+[2025-06-16 17:52:18,534: INFO: helpers: Repository yeokim5/End-to-End-Classification-MLflow initialized!]
+[2025-06-16 17:52:18,535: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-16 17:52:18,535: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-06-16 17:52:26,182: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-06-16 17:52:27,402: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-06-16 17:53:01,626: INFO: stage_02_prepare_base_model: *******************]
+[2025-06-16 17:53:01,627: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model started <<<<<<]
+[2025-06-16 17:53:01,634: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-16 17:53:01,636: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-16 17:53:01,638: INFO: common: created directory at: artifacts]
+[2025-06-16 17:53:02,499: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-06-16 17:53:02,508: INFO: helpers: Accessing as yeokim5]
+[2025-06-16 17:53:03,335: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/yeokim5/End-to-End-Classification-MLflow "HTTP/1.1 200 OK"]
+[2025-06-16 17:53:04,137: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-06-16 17:53:04,140: INFO: helpers: Initialized MLflow to track repo "yeokim5/End-to-End-Classification-MLflow"]
+[2025-06-16 17:53:04,141: INFO: helpers: Repository yeokim5/End-to-End-Classification-MLflow initialized!]
+[2025-06-16 17:53:04,142: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-06-16 17:53:04,646: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-06-16 17:53:04,889: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-06-16 17:53:19,992: INFO: stage_03_model_trainer: *******************]
+[2025-06-16 17:53:19,993: INFO: stage_03_model_trainer: >>>>>> stage Training started <<<<<<]
+[2025-06-16 17:53:19,996: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-16 17:53:19,998: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-16 17:53:19,999: INFO: common: created directory at: artifacts]
+[2025-06-16 17:53:21,035: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-06-16 17:53:21,048: INFO: helpers: Accessing as yeokim5]
+[2025-06-16 17:53:22,347: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/yeokim5/End-to-End-Classification-MLflow "HTTP/1.1 200 OK"]
+[2025-06-16 17:53:23,693: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-06-16 17:53:23,698: INFO: helpers: Initialized MLflow to track repo "yeokim5/End-to-End-Classification-MLflow"]
+[2025-06-16 17:53:23,700: INFO: helpers: Repository yeokim5/End-to-End-Classification-MLflow initialized!]
+[2025-06-16 17:53:23,702: INFO: common: created directory at: artifacts\training]
+[2025-06-17 17:27:03,401: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.126:8080]
+[2025-06-17 17:27:03,402: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-06-17 17:27:17,218: INFO: _internal: 192.168.0.126 - - [17/Jun/2025 17:27:17] "GET / HTTP/1.1" 200 -]
+[2025-06-17 17:27:17,683: INFO: _internal: 192.168.0.126 - - [17/Jun/2025 17:27:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2025-06-17 17:28:51,966: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Soft11\Miniconda3\envs\cancer_detection\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Soft11\Miniconda3\envs\cancer_detection\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Soft11\Miniconda3\envs\cancer_detection\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Soft11\Miniconda3\envs\cancer_detection\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Soft11\Miniconda3\envs\cancer_detection\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Soft11\Miniconda3\envs\cancer_detection\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File ".\app.py", line 45, in predictRoute
+    decodeImage(image, clApp.filename)
+  File "c:\users\soft11\downloads\end-to-end-classification-mlflow\src\cnnClassifier\utils\common.py", line 129, in decodeImage
+    imgdata = base64.b64decode(imgstring)
+  File "C:\Users\Soft11\Miniconda3\envs\cancer_detection\lib\base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Invalid base64-encoded string: number of data characters (105289) cannot be 1 more than a multiple of 4
+[2025-06-17 17:28:51,981: INFO: _internal: 192.168.0.126 - - [17/Jun/2025 17:28:51] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-06-17 17:29:47,580: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Soft11\Miniconda3\envs\cancer_detection\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Soft11\Miniconda3\envs\cancer_detection\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Soft11\Miniconda3\envs\cancer_detection\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Soft11\Miniconda3\envs\cancer_detection\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Soft11\Miniconda3\envs\cancer_detection\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Soft11\Miniconda3\envs\cancer_detection\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File ".\app.py", line 45, in predictRoute
+    decodeImage(image, clApp.filename)
+  File "c:\users\soft11\downloads\end-to-end-classification-mlflow\src\cnnClassifier\utils\common.py", line 129, in decodeImage
+    imgdata = base64.b64decode(imgstring)
+  File "C:\Users\Soft11\Miniconda3\envs\cancer_detection\lib\base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Invalid base64-encoded string: number of data characters (105289) cannot be 1 more than a multiple of 4
+[2025-06-17 17:29:47,584: INFO: _internal: 192.168.0.126 - - [17/Jun/2025 17:29:47] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-06-17 17:29:49,768: INFO: _internal: 192.168.0.126 - - [17/Jun/2025 17:29:49] "GET / HTTP/1.1" 200 -]
+[2025-06-17 17:30:03,950: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.126:8080]
+[2025-06-17 17:30:03,950: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-06-17 17:30:04,924: INFO: _internal: 192.168.0.126 - - [17/Jun/2025 17:30:04] "GET / HTTP/1.1" 200 -]
+[2025-06-17 17:30:11,173: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Soft11\Miniconda3\envs\cancer_detection\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Soft11\Miniconda3\envs\cancer_detection\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Soft11\Miniconda3\envs\cancer_detection\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Soft11\Miniconda3\envs\cancer_detection\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Soft11\Miniconda3\envs\cancer_detection\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Soft11\Miniconda3\envs\cancer_detection\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File ".\app.py", line 46, in predictRoute
+    result = clApp.classifier.predict()
+  File "c:\users\soft11\downloads\end-to-end-classification-mlflow\src\cnnClassifier\pipeline\prediction.py", line 18, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+  File "C:\Users\Soft11\Miniconda3\envs\cancer_detection\lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\Soft11\Miniconda3\envs\cancer_detection\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Soft11\Miniconda3\envs\cancer_detection\lib\site-packages\keras\saving\legacy\save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at model\model.h5
+[2025-06-17 17:30:11,187: INFO: _internal: 192.168.0.126 - - [17/Jun/2025 17:30:11] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-06-17 17:34:15,260: INFO: stage_02_prepare_base_model: *******************]
+[2025-06-17 17:34:15,261: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model started <<<<<<]
+[2025-06-17 17:34:15,264: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-17 17:34:15,265: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-17 17:34:15,266: INFO: common: created directory at: artifacts]
+[2025-06-17 17:34:16,022: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-06-17 17:34:16,032: INFO: helpers: Accessing as yeokim5]
+[2025-06-17 17:34:16,794: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/yeokim5/End-to-End-Classification-MLflow "HTTP/1.1 200 OK"]
+[2025-06-17 17:34:17,594: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-06-17 17:34:17,597: INFO: helpers: Initialized MLflow to track repo "yeokim5/End-to-End-Classification-MLflow"]
+[2025-06-17 17:34:17,599: INFO: helpers: Repository yeokim5/End-to-End-Classification-MLflow initialized!]
+[2025-06-17 17:34:17,600: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-06-17 17:34:18,290: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-06-17 17:34:18,610: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-06-17 17:34:29,200: INFO: stage_03_model_trainer: *******************]
+[2025-06-17 17:34:29,201: INFO: stage_03_model_trainer: >>>>>> stage Training started <<<<<<]
+[2025-06-17 17:34:29,203: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-17 17:34:29,205: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-17 17:34:29,207: INFO: common: created directory at: artifacts]
+[2025-06-17 17:34:29,909: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-06-17 17:34:29,919: INFO: helpers: Accessing as yeokim5]
+[2025-06-17 17:34:30,636: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/yeokim5/End-to-End-Classification-MLflow "HTTP/1.1 200 OK"]
+[2025-06-17 17:34:31,289: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-06-17 17:34:31,294: INFO: helpers: Initialized MLflow to track repo "yeokim5/End-to-End-Classification-MLflow"]
+[2025-06-17 17:34:31,296: INFO: helpers: Repository yeokim5/End-to-End-Classification-MLflow initialized!]
+[2025-06-17 17:34:31,298: INFO: common: created directory at: artifacts\training]
+[2025-06-17 17:37:19,011: INFO: stage_03_model_trainer: >>>>>> stage Training completed <<<<<<
+
+x==========x]
