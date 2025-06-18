@@ -57,6 +57,9 @@ class Evaluation:
         mlflow.set_registry_uri(self.config.mlflow_uri)
         tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
         
+        # Set the experiment name explicitly
+        mlflow.set_experiment("End-to-End-Classification-MLflow")
+        
         with mlflow.start_run():
             mlflow.log_params(self.config.all_params)
             mlflow.log_metrics(

@@ -1,3 +1,6 @@
+import dagshub
+dagshub.init(repo_owner='yeokim5', repo_name='End-to-End-Classification-MLflow', mlflow=True)
+
 from cnnClassifier.config.configuration import ConfigurationManager
 from cnnClassifier.components.model_evaluation_mlflow import Evaluation
 from cnnClassifier import logger

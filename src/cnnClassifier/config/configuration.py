@@ -1,6 +1,4 @@
 import os
-import dagshub
-
 from cnnClassifier.constants import *
 from cnnClassifier.utils.common import read_yaml, create_directories
 from cnnClassifier.entity.config_entity import (
@@ -22,8 +20,6 @@ class ConfigurationManager:
         self.params = read_yaml(params_filepath)
 
         create_directories([self.config.artifacts_root])
-
-        dagshub.init(repo_owner='yeokim5', repo_name='End-to-End-Classification-MLflow', mlflow=True)
 
 
     
